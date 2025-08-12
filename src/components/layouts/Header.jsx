@@ -5,6 +5,7 @@ import Image from "../Image";
 import Logo from "/src/assets/logo.png";
 import Button from "../Button";
 import { CiUser,CiShop } from "react-icons/ci";
+import {Link} from "react-router-dom";
 // import {  } from "react-icons/ci";
 
 const Header = () => {
@@ -15,10 +16,14 @@ const Header = () => {
           <Flex className={"justify-between"}>
             <div className="">
                 <ul className="flex gap-x-12">
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Blog</li>
-                    <li>pages</li>
+                  <Link to={"/"}><li>Home</li></Link>
+                  <Link to={"/shop"}><li>Shop</li></Link>
+                  <Link to={"/blog"}><li>Blog</li></Link>
+                  <Link to={"/pages"}><li>pages</li></Link>
+                    
+                    
+                    
+                    
                 </ul>
             </div>
             <div className="mr-[200px]">
